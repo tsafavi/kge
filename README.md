@@ -145,6 +145,38 @@ kge start examples/toy-complex-train.yaml --job.device cpu
 
 ```
 
+## Installation
+
+# Download and install LibKGE
+
+```sh
+# retrieve and install project in development mode
+git clone https://github.com/uma-pi1/kge.git
+cd kge
+```
+
+To install the base functionality with no experimental dependencies do
+
+```sh
+pip install -e .
+```
+
+To additionally install experimental dependencies do
+
+```sh
+pip install -e .[experimental]
+```
+Please note that this can cause issues with production servers that use stable distributions, e.g. CentOS 7.5. 
+
+# Download and preprocess datasets
+
+```sh
+cd data
+sh download_all.sh
+cd ..
+```
+Please note that preprocessing Wikidata5m can take severall GB of RAM. 
+
 ## Using LibKGE
 
 LibKGE supports training, evaluation, and hyperparameter tuning of KGE models.
