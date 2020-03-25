@@ -8,7 +8,7 @@ setup(
     author="Universität Mannheim",
     author_email="rgemulla@uni-mannheim.de",
     packages=["kge"],
-    install_requires=[
+    install_require=[
         "torch>=1.3.1",
         "pyyaml",
         "pandas",
@@ -18,11 +18,14 @@ setup(
         "sqlalchemy",
         "torchviz",
         "dataclasses",
+    ],
+    extras_require={
+        'experimental': [
         # LibKGE uses numba typed-dicts which is part of the experimental numba API
         # in version 0.48
         # see http://numba.pydata.org/numba-doc/0.48.0/reference/pysupported.html
         "numba==0.48.0",
-    ],
+    ]},
     zip_safe=False,
     entry_points={"console_scripts": ["kge = kge.cli:main",],},
 )
