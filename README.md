@@ -148,7 +148,7 @@ kge start examples/toy-complex-train.yaml --job.device cpu
 
 ## Installation
 
-# Download and install LibKGE
+### Download and install LibKGE
 
 ```sh
 # retrieve and install project in development mode
@@ -169,7 +169,7 @@ pip install -e .[experimental]
 ```
 Please note that this can cause issues with production servers that use stable distributions, e.g. CentOS 7.5. 
 
-# Download and preprocess datasets
+### Download and preprocess datasets
 
 ```sh
 cd data
