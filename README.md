@@ -27,6 +27,7 @@ alternative to KGE.
 1. [Features](#features)
 2. [Results and pretrained models](#results-and-pretrained-models)
 3. [Quick start](#quick-start)
+4. [Installation](#installation)
 4. [Using LibKGE](#using-libkge) 
 5. [Currently supported KGE models](#currently-supported-kge-models) 
 6. [Adding a new model](#adding-a-new-model)
