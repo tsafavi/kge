@@ -15,12 +15,12 @@ relational_tucker3:
     regularize: 'lp'
     regularize_args:
       weight: 6e-16
-    base_embedder:
-      dim: 50
-      dropout: 0.3
-      regularize: 'lp'
-      regularize_args:
-        weight: 6e-12
+      # base_embedder:
+      # dim: 50
+      # dropout: 0.3
+      # regularize: 'lp'
+      # regularize_args:
+      # weight: 6e-12
 
 train:
   max_epochs: 50

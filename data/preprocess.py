@@ -29,6 +29,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("folder", type=str)
     parser.add_argument("--order_sop", action="store_true")
+    parser.add_argument("--order_pso", action="store_true")
     args = parser.parse_args()
 
     print(f"Preprocessing {args.folder}...")
@@ -41,6 +42,8 @@ if __name__ == "__main__":
 
     if args.order_sop:
         S, P, O = 0, 2, 1
+    elif args.order_pso:
+        S, P, O = 1, 0, 2
     else:
         S, P, O = 0, 1, 2
 
